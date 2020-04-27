@@ -402,7 +402,7 @@ def updateCheck(self, Version):
           mess = root.find(".//"+messageTag)
           message = mess.text
           return message
-
+    return
     check = UpdateChecker()
     check.URL = "https://raw.githubusercontent.com/biplobsd/Google-Colab-CloudTorrent/master/update.xml"
     currentVersion = check.getVersion("currentVersion")
